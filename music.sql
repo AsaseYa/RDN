@@ -101,7 +101,6 @@ VALUES (1, 'https://www.youtube.com/embed/faqmNf_fZlE', 'Hunter X Hunter - Openi
        (18, 'https://www.youtube.com/embed/I59V9pjEOLI', 'Mirai Nikki Opening 1 [VOSTFR]', 0, 1),
        (19, 'https://www.youtube.com/embed/ORDXWrL5EuQ', 'Yuri!!! on Ice ユーリ!!! on ICE Opening \"History Maker\"', 0,
         1),
-       (20, 'https://www.youtube.com/embed/6vaVwbc_soo', 'All Out!! OP Full', 0, 1),
        (21, 'https://www.youtube.com/embed/sF0QLtk3YH0', 'Psycho-pass ED 1 - Monster without a name (Creditless)', 0,
         1),
        (22, 'https://www.youtube.com/embed/KVg8NZHRv04', 'Hajime No Ippo New Challenger Opening Full', 0, 1),

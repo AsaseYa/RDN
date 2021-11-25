@@ -5,7 +5,7 @@
 }
 
 .bg {
-    background-image: url("../images/bg.jpg");
+    background-image: url("../images/bg-invert.png");
     min-height: 100vh;
     min-width: 100vw;
     position: absolute;
@@ -18,3 +18,4 @@
     z-index: -1;
 
 }
+.invert { filter: invert(100%); }

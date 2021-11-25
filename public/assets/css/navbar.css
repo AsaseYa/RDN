@@ -21,6 +21,7 @@ div.card div a {
 .topnav {
     display: flex;
     align-items: center;
+    width: 100vw;
 }
 
 #myLinks a {
