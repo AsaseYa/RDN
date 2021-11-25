@@ -7,11 +7,12 @@
 }
 
 .topnav a img {
-    width: 40px;
+    width: 50px;
 }
 
 .topnav {
     background: white;
+     
 }
 
 div.card div a {
@@ -24,11 +25,15 @@ div.card div a {
     width: 100vw;
 }
 
-#myLinks a {
-    font-size: 25px;
+#myLinks :hover {                                
+    background-color: rgb(123, 233, 253);
+    box-shadow: none;
+    border-radius: 2rem;
+}
+#myLinks a {                                
+    font-size: 2rem;
     margin-right: 4%;
 }
-
 #myLinks {
     width: 100%;
     display: flex;
