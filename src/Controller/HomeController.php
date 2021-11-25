@@ -40,35 +40,4 @@ class HomeController extends AbstractController
         ];
         return $this->twig->render('Home/index.html.twig', ["musics" => [$sing1, $sing2]]);
     }
-
-    public function test(): string
-    {
-        /*        $playlist = 'PLcCQJuPwyya3uxri7ZCiDDjMwaaVXz7DK';
-
-                $musics = new MusicManager();
-                $musicRand = $musics->twoRandomMusicByGenre($playlist);
-
-                $sing1 = [
-                    'title' => $musicRand[0]->snippet->title,
-                    'video_id' => "https://www.youtube.com/embed/" . $musicRand[0]->snippet->resourceId->videoId
-                ];
-
-                $sing2 = [
-                    'title' => $musicRand[1]->snippet->title,
-                    'video_id' => "https://www.youtube.com/embed/" . $musicRand[1]->snippet->resourceId->videoId
-                ];
-                return $this->twig->render('Home/test.html.twig', ["musics" => [$sing1, $sing2]]);*/
-
-/*        $json = json_decode(file_get_contents(__DIR__ . '/../../music.json'));
-        var_dump($json->items);
-        die();*/
-
-        $array = [
-            'url' => 'https://www.youtube.com/embed/OPf0YbXqDm0',
-            'name' => 'osef',
-        ];
-
-        $newMusic = new NewMusicModel();
-        $newMusic->insertAnime($array);
-    }
 }

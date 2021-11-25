@@ -88,4 +88,43 @@ class ItemController extends AbstractController
             header('Location:/items');
         }
     }
+
+
+    public function test(): string
+    {
+        /*        $playlist = 'PLcCQJuPwyya3uxri7ZCiDDjMwaaVXz7DK';
+
+                $musics = new MusicManager();
+                $musicRand = $musics->twoRandomMusicByGenre($playlist);
+
+                $sing1 = [
+                    'title' => $musicRand[0]->snippet->title,
+                    'video_id' => "https://www.youtube.com/embed/" . $musicRand[0]->snippet->resourceId->videoId
+                ];
+
+                $sing2 = [
+                    'title' => $musicRand[1]->snippet->title,
+                    'video_id' => "https://www.youtube.com/embed/" . $musicRand[1]->snippet->resourceId->videoId
+                ];
+                return $this->twig->render('Home/test.html.twig', ["musics" => [$sing1, $sing2]]);*/
+
+        /*        $json = json_decode(file_get_contents(__DIR__ . '/../../music.json'));
+
+
+                $newMusic = new NewMusicModel();
+                $array = [];
+                foreach ($json->items as $music) {
+                    $array = [
+                        'url' => "https://www.youtube.com/embed/" . $music->snippet->resourceId->videoId,
+                        'name' => $music->snippet->title,
+                    ];
+                    $newMusic->insertAnime($array);
+                };
+
+                die();
+
+                var_dump($json->items[0]->snippet->resourceId->videoId);*/
+
+
+    }
 }
