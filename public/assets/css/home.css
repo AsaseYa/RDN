@@ -34,19 +34,43 @@
 
 .title1,
 .title2 {
-
+    margin-bottom: 13rem;
     font-size: 1.5rem;
     padding: 1rem 3rem 1rem 3rem;
     text-align: center;
     overflow: hidden;
 }
 
-.yt-1,
-.yt-2 {
-    margin-top: 2rem;
+.yt-1 {
+    position: absolute;
     align-self: center;
     border: none;
     box-shadow: grey 10px 10px 10px 1px;
+    border-radius: 10px;
+    transition: 1s;
+    animation: video-enter 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.yt-2 {
+    position: absolute;
+    align-self: center;
+    border: none;
+    box-shadow: grey 10px 10px 10px 1px;
+    border-radius: 10px;
+    transition: 1s;
+    animation: video-exit 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.yt-1:hover,
+.yt-2:hover {
+    transform: translateY(-10rem) rotateZ(720deg);;
+}
+
+.input {
+    margin-top: 13rem;
 }
 
 .submit {
@@ -70,4 +94,17 @@
     width: 10rem;
     border: none;
 }
-.invert { filter: invert(100%); }
+
+.invert {
+    filter: invert(100%);
+}
+
+@keyframes video-enter {
+    from{transform: translateX(-50vw)}
+    to{transform: translateX(0vw)}
+}
+
+@keyframes video-exit {
+    from{transform: translateX(+70vw)}
+    to{transform: translateX(0vw)}
+}
