@@ -1,0 +1,16 @@
+{% for music in musics %}
+
+	<div class="classement">
+		{#<div style="display: none;">{{ music.artid }}</div>#}
+		
+        
+        
+        <img class="music-classement" alt="{{ article.aname }}" src="{{ article.picture }}"/>
+		
+        
+        
+        <h4 class="music-name">{{ music.name }}</h4>
+		<h4 class="music-url">{{ music.url }}€</h4>
+		<p class="music-points">{{ music.points }}</p>
+	</div>
+{% endfor %}
