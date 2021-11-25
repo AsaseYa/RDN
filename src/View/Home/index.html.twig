@@ -1,14 +1,22 @@
 {% extends 'layout.html.twig' %}
 {% block stylesheet %}
-  <link rel="stylesheet" href="/assets/css/style.css" />
-  <link rel="stylesheet" href="/assets/css/navbar.css" />
-{% endblock %}
-{% block navbar %}
-  {% include 'components/_navbar.html.twig' %}
+    <link rel="stylesheet" href="/assets/css/home.css"/>
+    <link rel="stylesheet" href="/assets/css/style.css"/>
+    <link rel="stylesheet" href="/assets/css/navbar.css"/>
 {% endblock %}
 
+
 {% block content %}
-{% block videos %}
-{% include 'components/_videos.html.twig' %}
-{% endblock %}
+    <div class="bg">
+        <div class="main">
+
+
+            {% block navbar %}
+                {% include 'components/_navbar.html.twig' %}
+            {% endblock %}
+            {% block videos %}
+                {% include 'components/_videos.html.twig' %}
+            {% endblock %}
+        </div>
+    </div>
 {% endblock %}

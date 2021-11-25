@@ -3,11 +3,6 @@
     margin: 0;
 }
 
-html {
-    background: black;
-}
-
 body {
-    background: black;
-    color: white;
+    height: 100%;
 }

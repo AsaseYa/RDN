@@ -1,0 +1,71 @@
+.videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    gap: 3rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.videos div button {
+    margin-top: 5rem;
+}
+
+
+.video1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: calc(50% - 1.5rem);
+    margin-left: 3rem;
+}
+
+.video2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    width: calc(50% - 1.5rem);
+    margin-right: 3rem;
+}
+
+.title1,
+.title2 {
+
+    font-size: 1.5rem;
+    padding: 1rem 3rem 1rem 3rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.yt-1,
+.yt-2 {
+    margin-top: 2rem;
+    align-self: center;
+}
+
+.submit {
+    margin-top: 3rem;
+    background: cornsilk;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    font-size: 1.3rem;
+    transition: background 1s, transform 1s;
+}
+
+.submit:hover {
+    background: greenyellow;
+    transform: rotate(720deg);
+}
+
+.versus-video {
+    width: 10rem;
+    border: none;
+}
+.invert { filter: invert(100%); }

@@ -9,12 +9,15 @@
 
     <link rel="stylesheet" href="/assets/css/settings.css">
     {% block stylesheet %}{% endblock %}
-    {% block navbar %}{% endblock %}
     <link rel="icon" href="/assets/images/favicon.png">
 </head>
 
 <body>
-{% block content %}{% endblock %}
+{% block content %}
+
+    {% block navbar %}{% endblock %}
+
+{% endblock %}
 {% block javascript %}
 <script src="/assets/js/videoTimer.js"></script>
 {% endblock %}
