@@ -26,7 +26,7 @@ class HomeController extends AbstractController
      */
 
     public function show2()
-    {
+    {   
         $itemManager = new MusicManager();
         $musics = $itemManager->selectAllLimit2();
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -35,6 +35,13 @@ class HomeController extends AbstractController
             $new->insertVote($id);
             header('Location: /');
         }
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $id = $_POST('select');
+            $new = new MusicManager();
+            $new->selectAllLimit2Select($id);
+            header('Location: /');
+        }
+        
 
         return $this->twig->render('Home/index.html.twig', ["musics" => $musics]);
     }

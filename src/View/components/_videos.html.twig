@@ -1,7 +1,20 @@
-<div class="videos">
+<div class="select">
+<form action="" methode="POST">
+<select name="select" id="select">
+<option value="">--Please choose an option--</option>
+    <option value="1">Anime</option>
+    <option value="2">90'</option>
+    <option value="3">2000</option>
+    <option value="4">Top 50</option>
+    </select>
+    <input type="submit">
+    </form>
+</div>
+    <div class="videos">
+
     <div class="video1">
         <div class="title1">
-            {{ musics[0]['name']|slice(0, 40) }}...
+            {{ musics[0]['name']|slice(0, 47) }}...
         </div>
         <iframe class="yt-1" width="700" height="400" src="{{ musics[0]['url'] }}"></iframe>
         <div class="input">
@@ -15,7 +28,7 @@
     <img class="versus-video invert" src="/assets/images/logo2.png">
     <div class="video2">
         <div class="title2">
-            {{ musics[1]['name']|slice(0, 40) }}...
+            {{ musics[1]['name']|slice(0, 47) }}...
         </div>
         <iframe class="yt-2" width="700" height="400" src="{{ musics[1]['url'] }}"></iframe>
         <div class="input">

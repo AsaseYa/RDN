@@ -26,6 +26,20 @@ class MusicManager extends AbstractManager
             $statement = $this->pdo->exec($query);
         }
     }
+    public function selectAllLimit2Select($id)
+    {
+        $query = "SELECT *
+            FROM music
+            WHERE id_genre =`:select`
+            ORDER BY rand()
+            LIMIT 2";
+            $statement = $this->pdo->prepare($query);
+            $statement->bindValue('id_genre', $id, \PDO::PARAM_INT);
+            $statement->execute();
+            return $statement->fetchAll();
+
+        return $this->pdo->query($query)->fetchAll();
+    }
 }
 
 
