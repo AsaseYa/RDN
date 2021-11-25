@@ -24,20 +24,12 @@ class HomeController extends AbstractController
      * @throws \Twig\Error\RuntimeError
      * @throws \Twig\Error\SyntaxError
      */
-    public function index()
+    
+    public function show2()
     {
-        $musics = new MusicManager();
-        $musicRand = $musics->twoRandomMusic();
+        $itemManager = new MusicManager();
+        $musics = $itemManager->selectAllLimit2();
 
-        $sing1 = [
-            'title' => $musicRand[0]->snippet->title,
-            'video_id' => "https://www.youtube.com/embed/" . $musicRand[0]->snippet->resourceId->videoId
-        ];
-
-        $sing2 = [
-            'title' => $musicRand[1]->snippet->title,
-            'video_id' => "https://www.youtube.com/embed/" . $musicRand[1]->snippet->resourceId->videoId
-        ];
-        return $this->twig->render('Home/index.html.twig', ["musics" => [$sing1, $sing2]]);
+        return $this->twig->render('Home/index.html.twig', ["musics" => $musics]);
     }
 }
