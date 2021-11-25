@@ -71,7 +71,6 @@
     border-radius: 10px;
 }
 
-
 .submit {
     margin-top: 3rem;
     background: cornsilk;
@@ -90,11 +89,10 @@
 }
 
 .versus-video {
-    position: absolute;
+    opacity: 0;
     width: 10rem;
     border: none;
-    bottom: -15vh;
-    animation: versus-middle 0.5s;
+    animation: versus-middle 1.5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-delay: 2.5s;
@@ -124,9 +122,9 @@
 
 @keyframes versus-middle {
     from {
-        transform: translateY(0vh)
+        opacity: 0;
     }
     to {
-        transform: translateY(-55vh)
+        opacity: 100%;
     }
 }
