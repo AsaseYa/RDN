@@ -1,5 +1,14 @@
 {% extends 'layout.html.twig' %}
+{% block stylesheet %}
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/navbar.css" />
+{% endblock %}
+{% block navbar %}
+  {% include 'components/_navbar.html.twig' %}
+{% endblock %}
 
 {% block content %}
-    <h1>Hello Wilder !</h1>
+{% block videos %}
+{% include 'components/_videos.html.twig' %}
+{% endblock %}
 {% endblock %}
