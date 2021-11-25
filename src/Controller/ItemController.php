@@ -108,22 +108,23 @@ class ItemController extends AbstractController
                 ];
                 return $this->twig->render('Home/test.html.twig', ["musics" => [$sing1, $sing2]]);*/
 
-        /*        $json = json_decode(file_get_contents(__DIR__ . '/../../music.json'));
+        $json = json_decode(file_get_contents(__DIR__ . '/../../music.json'));
 
+        var_dump($json);
+        die();
+        $newMusic = new NewMusicModel();
+        $array = [];
+        foreach ($json->items as $music) {
+            $array = [
+                'url' => "https://www.youtube.com/embed/" . $music->snippet->resourceId->videoId,
+                'name' => $music->snippet->title,
+            ];
+            $newMusic->insertAnime($array);
+        };
 
-                $newMusic = new NewMusicModel();
-                $array = [];
-                foreach ($json->items as $music) {
-                    $array = [
-                        'url' => "https://www.youtube.com/embed/" . $music->snippet->resourceId->videoId,
-                        'name' => $music->snippet->title,
-                    ];
-                    $newMusic->insertAnime($array);
-                };
+        die();
 
-                die();
-
-                var_dump($json->items[0]->snippet->resourceId->videoId);*/
+        var_dump($json->items[0]->snippet->resourceId->videoId);
 
 
     }
