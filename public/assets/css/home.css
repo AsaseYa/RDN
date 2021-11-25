@@ -62,11 +62,6 @@
     border: none;
     box-shadow: grey 10px 10px 10px 1px;
     border-radius: 10px;
-    /*    transition: 1s;
-        animation: video-enter 1s;
-        animation-fill-mode: forwards;
-        animation-timing-function: linear;
-        animation-delay: 1s;*/
 }
 
 .yt-2 {
@@ -95,9 +90,14 @@
 }
 
 .versus-video {
+    position: absolute;
     width: 10rem;
     border: none;
-    animation: versus-middle 1s;
+    bottom: -15vh;
+    animation: versus-middle 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 2.5s;
 }
 
 .invert {
@@ -122,12 +122,11 @@
     }
 }
 
-/*
 @keyframes versus-middle {
     from {
-        transform: translateX(0vw)
+        transform: translateY(0vh)
     }
     to {
-        transform: translateX(47vw)
+        transform: translateY(-55vh)
     }
-}*/
+}
