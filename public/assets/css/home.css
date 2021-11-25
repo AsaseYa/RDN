@@ -45,6 +45,8 @@
 .yt-2 {
     margin-top: 2rem;
     align-self: center;
+    border: none;
+    box-shadow: grey 10px 10px 10px 1px;
 }
 
 .submit {
