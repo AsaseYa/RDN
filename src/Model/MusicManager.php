@@ -4,6 +4,8 @@ namespace App\Model;
 
 class MusicManager extends AbstractManager
 {
+    public const TABLE = 'music';
+    
     public function selectAllLimit2()
         {
             $query = "SELECT *

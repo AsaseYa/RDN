@@ -3,14 +3,14 @@
 namespace App\Controller;
 
 use App\Model\ClassementManager;
+use App\Model\MusicManager;
 
 class ClassementController extends AbstractController
 {
     public function index(): string
     {
-        $classementManager = new ClassementManager();
-        $videos = $classementManager->selectAll('points');
-
+        $classementManager = new MusicManager();
+        $videos = $classementManager->selectAll('points','desc');
         return $this->twig->render('Classement/index.html.twig', ['videos' => $videos]);
     }
 

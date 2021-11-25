@@ -29,7 +29,6 @@ class HomeController extends AbstractController
     {
         $itemManager = new MusicManager();
         $musics = $itemManager->selectAllLimit2();
-
         return $this->twig->render('Home/index.html.twig', ["musics" => $musics]);
     }
 }

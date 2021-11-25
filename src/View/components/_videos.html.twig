@@ -1,7 +1,6 @@
 <div class="videos">
-
+	{{ dump(musics) }}
 	{% for music in musics %}
-
 		<div class="video">
 			<iframe width="420" height="315" src="{{ music['url'] }}"></iframe>
 			<div>

@@ -1,0 +1,11 @@
+.classement {
+    display : flex;
+    flex-direction: column;
+    border-bottom: 1px solid;
+    align-items: center;
+}
+
+.name {
+    display : flex;
+    flex-direction: row;
+}
