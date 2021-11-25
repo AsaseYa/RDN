@@ -24,11 +24,17 @@ class HomeController extends AbstractController
      * @throws \Twig\Error\RuntimeError
      * @throws \Twig\Error\SyntaxError
      */
-    
+
     public function show2()
     {
         $itemManager = new MusicManager();
         $musics = $itemManager->selectAllLimit2();
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $id = $_POST["id"];
+            $new = new MusicManager();
+            $new->insertVote($id);
+            header('Location: /');
+        }
 
         return $this->twig->render('Home/index.html.twig', ["musics" => $musics]);
     }
