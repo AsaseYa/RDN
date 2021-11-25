@@ -48,10 +48,11 @@
     box-shadow: grey 10px 10px 10px 1px;
     border-radius: 10px;
     transition: 1s;
-    animation: video-enter 2s;
+    animation: video-enter 1s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 }
+
 .yt-2 {
     position: absolute;
     align-self: center;
@@ -59,14 +60,9 @@
     box-shadow: grey 10px 10px 10px 1px;
     border-radius: 10px;
     transition: 1s;
-    animation: video-exit 2s;
+    animation: video-exit 1s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-}
-
-.yt-1:hover,
-.yt-2:hover {
-    transform: translateY(-10rem) rotateZ(720deg);;
 }
 
 .input {
@@ -100,11 +96,19 @@
 }
 
 @keyframes video-enter {
-    from{transform: translateX(-50vw)}
-    to{transform: translateX(0vw)}
+    from {
+        transform: translateX(-50vw)
+    }
+    to {
+        transform: translateX(0vw)
+    }
 }
 
 @keyframes video-exit {
-    from{transform: translateX(+70vw)}
-    to{transform: translateX(0vw)}
+    from {
+        transform: translateX(+70vw)
+    }
+    to {
+        transform: translateX(0vw)
+    }
 }
