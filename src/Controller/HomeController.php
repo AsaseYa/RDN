@@ -9,6 +9,10 @@
 
 namespace App\Controller;
 
+use App\Model\MusicManager;
+use Google_Client;
+use Google_Service_YouTube;
+
 class HomeController extends AbstractController
 {
     /**
@@ -21,6 +25,23 @@ class HomeController extends AbstractController
      */
     public function index()
     {
-        return $this->twig->render('Home/index.html.twig');
+        $musics = new MusicManager();
+        $musicRand = $musics->twoRandomMusic();
+
+        $sing1 = [
+            'title' => $musicRand[0]->snippet->title,
+            'video_id' => "https://www.youtube.com/embed/" . $musicRand[0]->snippet->resourceId->videoId
+        ];
+
+        $sing2 = [
+            'title' => $musicRand[1]->snippet->title,
+            'video_id' => "https://www.youtube.com/embed/" . $musicRand[1]->snippet->resourceId->videoId
+        ];
+        return $this->twig->render('Home/index.html.twig', ["musics" => [$sing1, $sing2]]);
+    }
+
+    public function test(): string
+    {
+        return $this->twig->render('Home/test.html.twig');
     }
 }
