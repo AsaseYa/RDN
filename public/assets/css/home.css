@@ -19,8 +19,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    position: absolute;
+    top: 20%;
+    left: -50vw;
     width: calc(50% - 1.5rem);
     margin-left: 3rem;
+    transition: 1s;
+    animation: video-enter 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 1s;
 }
 
 .video2 {
@@ -28,46 +36,46 @@
     flex-direction: column;
     text-align: center;
     justify-content: space-evenly;
+    position: absolute;
+    top: 20%;
+    right: -50vw;
     width: calc(50% - 1.5rem);
     margin-right: 3rem;
+    animation: video-exit 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 1s;
 }
 
 .title1,
 .title2 {
-    margin-bottom: 13rem;
     font-size: 1.5rem;
     padding: 1rem 3rem 1rem 3rem;
     text-align: center;
     overflow: hidden;
+    color: black;
+    margin-bottom: 2rem;
 }
 
 .yt-1 {
-    position: absolute;
     align-self: center;
     border: none;
     box-shadow: grey 10px 10px 10px 1px;
     border-radius: 10px;
-    transition: 1s;
-    animation: video-enter 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    /*    transition: 1s;
+        animation: video-enter 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        animation-delay: 1s;*/
 }
 
 .yt-2 {
-    position: absolute;
     align-self: center;
     border: none;
     box-shadow: grey 10px 10px 10px 1px;
     border-radius: 10px;
-    transition: 1s;
-    animation: video-exit 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
 }
 
-.input {
-    margin-top: 13rem;
-}
 
 .submit {
     margin-top: 3rem;
@@ -89,6 +97,7 @@
 .versus-video {
     width: 10rem;
     border: none;
+    animation: versus-middle 1s;
 }
 
 .invert {
@@ -97,18 +106,28 @@
 
 @keyframes video-enter {
     from {
-        transform: translateX(-50vw)
+        transform: translateX(0vw)
     }
     to {
-        transform: translateX(0vw)
+        transform: translateX(47vw)
     }
 }
 
 @keyframes video-exit {
     from {
-        transform: translateX(+70vw)
-    }
-    to {
         transform: translateX(0vw)
     }
+    to {
+        transform: translateX(-47vw)
+    }
 }
+
+/*
+@keyframes versus-middle {
+    from {
+        transform: translateX(0vw)
+    }
+    to {
+        transform: translateX(47vw)
+    }
+}*/
