@@ -7,15 +7,17 @@
 
     <title>{% block title %}{% endblock %}</title>
 
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/settings.css">
     {% block stylesheet %}{% endblock %}
     {% block navbar %}{% endblock %}
     <link rel="icon" href="/assets/images/favicon.png">
 </head>
 
 <body>
-    {% block content %}{% endblock %}
-    {% block javascript %}{% endblock %}
+{% block content %}{% endblock %}
+{% block javascript %}
+<script src="/assets/js/videoTimer.js"></script>
+{% endblock %}
 </body>
 </html>
 

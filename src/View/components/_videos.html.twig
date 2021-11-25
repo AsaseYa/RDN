@@ -1,11 +1,30 @@
 <div class="videos">
-	{{ dump(musics) }}
-	{% for music in musics %}
-		<div class="video">
-			<iframe width="420" height="315" src="{{ music['url'] }}"></iframe>
-			<div>
-				<button>vote</button>
-			</div>
-		</div>
+	<div class="title">
+		<h3>{{ musics[0]['name'] }}</h3>
+	</div>
+	<div class="video1">
+		<iframe width="420" height="315" src="{{ musics[0]['url'] }}"></iframe>
+	</div>
+	<div class="input">
+		<form action="" method="POST">
+			<input type="text" style="display: none;" name="id">{{ musics[0]['id'] }}</input>
+			<input type="submit" id='submit' value="vote">
+		</form>
+	</div>
+	<div class="title">
+		<h3>{{ musics[1]['name'] }}</h3>
+	</div>
+	<div class="video2">
 
-	{% endfor %}
+		<div class="video1">
+			<iframe width="420" height="315" src="{{ musics[1]['url'] }}"></iframe>
+		</div>
+		<div class="input">
+		<form action="" method="POST">
+			<input type="text" style="display: none;" name="id">{{ musics[1]['id'] }}</input>
+			<input type="submit" id='submit' value="vote">
+			
+		</form>
+	</div>
+	</div>
+</div>

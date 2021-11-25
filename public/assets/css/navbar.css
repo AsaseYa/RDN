@@ -18,23 +18,19 @@ div.card div a {
     font-size: large;
 }
 
-    .topnav {
-        display: flex;
-        align-items: center;
-    }
+.topnav {
+    display: flex;
+    align-items: center;
+}
 
-    #myLinks a {
-        font-size: 25px;
-        margin-right: 4%;
-    }
+#myLinks a {
+    font-size: 25px;
+    margin-right: 4%;
+}
 
-    #myLinks {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
-    html {
-        background:cornflowerblue;
-    }
+#myLinks {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
