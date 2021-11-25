@@ -81,7 +81,6 @@ TABLES `music` WRITE;
 INSERT INTO `music`
 VALUES (1, 'https://www.youtube.com/embed/faqmNf_fZlE', 'Hunter X Hunter - Opening 1 | Departure!', 0, 1),
        (2, 'https://www.youtube.com/embed/JBqxVX_LXvk', 'Fire Force – Opening Theme – Inferno', 0, 1),
-       (3, 'https://www.youtube.com/embed/pmanD_s7G3U', 'Demon Slayer | OP | \"Gurenge\" by LiSA HD', 0, 1),
        (4, 'https://www.youtube.com/embed/v8bZVdTgXoY', 'TVアニメ『呪術廻戦』ノンクレジットOPムービー／OPテーマ：Eve「廻廻奇譚」', 0, 1),
        (5, 'https://www.youtube.com/embed/tF4faMbs5oQ', 'ＴＶアニメ 「Ｄｒ．ＳＴＯＮＥ」 第1クールOP＜Good Morning World!＞ノンクレジット映像', 0, 1),
        (6, 'https://www.youtube.com/embed/l2j1qM7gx54', '『僕のヒーローアカデミア』ヒロアカ2期第2クールオープニングムービー／「空に歌えば」amazarashi／ヒロアカOP',
