@@ -27,6 +27,7 @@ div.card div a {
 }
 
 #myLinks a {
+    font-size: 22px;                                                
     font-size: 2rem;
     margin-right: 4%;
 }
