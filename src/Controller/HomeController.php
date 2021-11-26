@@ -26,24 +26,31 @@ class HomeController extends AbstractController
      */
 
     public function show2()
-    {   
+    {
+        session_start();
+
+
         $itemManager = new MusicManager();
         $musics = $itemManager->selectAllLimit2();
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $_SESSION['validateMusique'][] = [
+                'title' => $_POST['title'],
+                'url' => $_POST['url']
+            ];
             $id = $_POST["id"];
             $new = new MusicManager();
             $new->insertVote($id);
             header('Location: /');
         }
         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-            if (isset($_GET['select'])){
+            if (isset($_GET['select'])) {
                 $select = new MusicManager();
                 $new = $select->selectAllLimit2Select($_GET['select']);
                 return $this->twig->render('Home/index.html.twig', ["musics" => $new]);
-            }    
+            }
         }
-        
+
 
         return $this->twig->render('Home/index.html.twig', ["musics" => $musics]);
     }

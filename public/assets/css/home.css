@@ -16,12 +16,12 @@
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 10px;
     background: white;
-    box-shadow: grey 10px 10px 10px 1px;
 }
 
 .select:hover {
     color: white;
     background: black;
+    box-shadow: grey 5px 5px 10px 1px;
 }
 
 .videos {
@@ -78,29 +78,34 @@
 
 .title1,
 .title2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 1rem 3rem 1rem 3rem;
     text-align: center;
     overflow: hidden;
-    color: black;
     margin-bottom: 2rem;
+    color: white;
 }
 
 .yt-1 {
     align-self: center;
     border: none;
-    box-shadow: grey 10px 10px 10px 1px;
+    box-shadow: grey 0 0 10px 0.5rem;
     border-radius: 10px;
 }
 
 .yt-2 {
     align-self: center;
     border: none;
-    box-shadow: grey 10px 10px 10px 1px;
+    box-shadow: grey 0 0 10px 0.5rem;
     border-radius: 10px;
 }
 
-.submit {
+.form2,
+.form1 {
+    height: 10rem;
+}
+
+.submit1 {
     margin-top: 3rem;
     background: white;
     width: 5rem;
@@ -108,16 +113,39 @@
     border-radius: 50%;
     cursor: pointer;
     border: none;
-    font-size: 1.3rem;
-    transition: background 1s, transform 1s;
+    font-size: 2rem;
+    transition: box-shadow 1s, color 1s, background 1s, transform 1s;
 }
 
-.submit:hover {
-    background: greenyellow;
+.submit1:hover {
+    background: #2A628F;
+    color: white;
     transform: rotate(720deg);
+    box-shadow: #3E92CC 0 0 10px 0.5rem;
+}
+
+.submit2 {
+    margin-top: 3rem;
+    background: white;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    font-size: 2rem;
+    transition: box-shadow 1s, color 1s, background 1s, transform 1s;
+}
+
+.submit2:hover {
+    background: #B10F2E;
+    color: white;
+    transform: rotate(720deg);
+    box-shadow: #EB1E43 0 0 10px 0.5rem;
 }
 
 .versus-video {
+    top: 44%;
+    position: absolute;
     opacity: 0;
     width: 10rem;
     border: none;
