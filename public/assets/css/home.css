@@ -1,3 +1,31 @@
+
+.select > form:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    width: 100%;
+  }
+  
+
+/* Élément | http://localhost:8000/?select=2 */
+
+.select {
+    height: 6rem;
+  }
+  
+
+/* Élément | http://localhost:8000/?select=2 */
+
+#select {
+    border-radius: 1rem;
+  }
+  
+  /* Élément | http://localhost:8000/?select=2 */
+  
+  .select > form:nth-child(1) > input:nth-child(2) {
+    border-radius: 1rem;
+  }
+
 .videos {
     display: flex;
     flex-direction: row;
@@ -8,6 +36,10 @@
     align-items: center;
     text-align: center;
     margin-top: 5rem;
+}
+
+* {
+    overflow: hidden;
 }
 
 .videos div button {
