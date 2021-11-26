@@ -1,34 +1,3 @@
-
-/* Élément | http://localhost:8000/?select=2 */
-
-.select > form:nth-child(1) {
-    display: flex;
-    justify-content: center;
-    height: 3rem;
-    width: 100%;
-  }
-  
-
-/* Élément | http://localhost:8000/?select=2 */
-
-.select {
-    height: 6rem;
-  }
-  
-
-/* Élément | http://localhost:8000/?select=2 */
-
-#select {
-    border-radius: 1rem;
-  }
-  
-  /* Élément | http://localhost:8000/?select=2 */
-  
-  .select > form:nth-child(1) > input:nth-child(2) {
-    border-radius: 1rem;
-  }
-  
-
 .videos {
     display: flex;
     flex-direction: row;
@@ -45,7 +14,6 @@
     margin-top: 5rem;
 }
 
-
 .video1 {
     display: flex;
     flex-direction: column;
@@ -56,7 +24,7 @@
     width: calc(50% - 1.5rem);
     margin-left: 3rem;
     transition: 1s;
-    animation: video-enter 1s;
+    animation: video-enter 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-delay: 1s;
@@ -72,7 +40,7 @@
     right: -50vw;
     width: calc(50% - 1.5rem);
     margin-right: 3rem;
-    animation: video-exit 1s;
+    animation: video-exit 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-delay: 1s;
@@ -102,7 +70,6 @@
     border-radius: 10px;
 }
 
-
 .submit {
     margin-top: 3rem;
     background: cornsilk;
@@ -121,14 +88,13 @@
 }
 
 .versus-video {
-    position: absolute;
+    opacity: 0;
     width: 10rem;
     border: none;
-    bottom: -15vh;
-    animation: versus-middle 0.5s;
+    animation: versus-middle 1.5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    animation-delay: 2.5s;
+    animation-delay: 2s;
 }
 
 .invert {
@@ -155,9 +121,9 @@
 
 @keyframes versus-middle {
     from {
-        transform: translateY(0vh)
+        opacity: 0;
     }
     to {
-        transform: translateY(-55vh)
+        opacity: 100%;
     }
 }

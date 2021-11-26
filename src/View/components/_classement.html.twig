@@ -1,16 +1,24 @@
-{% for music in musics %}
+<div class="div-yt-1">
+    <div class="music-name">{{ videos[0].name|slice(0, 20) }}...</div>
+    <iframe class="yt-1" width="500" height="300" src="{{ videos[0]['url'] }}" allowfullscreen></iframe>
+</div>
 
-	<div class="classement">
-		{#<div style="display: none;">{{ music.artid }}</div>#}
-		
-        
-        
-        <img class="music-classement" alt="{{ article.aname }}" src="{{ article.picture }}"/>
-		
-        
-        
-        <h4 class="music-name">{{ music.name }}</h4>
-		<h4 class="music-url">{{ music.url }}€</h4>
-		<p class="music-points">{{ music.points }}</p>
-	</div>
+<div class="yt-1-2">
+    <div class="div-yt-2">
+        <div class="music-name">{{ videos[1].name|slice(0, 20) }}...</div>
+        <iframe class="yt-2" width="500" height="300" src="{{ videos[1]['url'] }}" allowfullscreen></iframe>
+    </div>
+    <div class="div-yt-3">
+        <div class="music-name">{{ videos[2].name|slice(0,20) }}...</div>
+        <iframe class="yt-3" width="500" height="300" src="{{ videos[2]['url'] }}" allowfullscreen></iframe>
+    </div>
+</div>
+
+{% for i in 3..29 %}
+    <a href="{{ videos[i].url }}" class="classement">
+        <div class="place">Rank #{{ i+1 }}</div>
+        <div class="music-name-classement">{{ videos[i].name }}</div>
+        <p class="music-points">Points: {{ videos[i].points }}</p>
+    </a>
 {% endfor %}
+

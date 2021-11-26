@@ -3,14 +3,21 @@
 namespace App\Controller;
 
 use App\Model\ClassementManager;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Error\SyntaxError;
 
 class ClassementController extends AbstractController
 {
+    /**
+     * @throws SyntaxError
+     * @throws RuntimeError
+     * @throws LoaderError
+     */
     public function index(): string
     {
         $classementManager = new ClassementManager();
-        $videos = $classementManager->selectAll('points');
-
+        $videos = $classementManager->selectAll('points', 'desc');
         return $this->twig->render('Classement/index.html.twig', ['videos' => $videos]);
     }
 
