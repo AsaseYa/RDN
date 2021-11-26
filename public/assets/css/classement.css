@@ -1,10 +1,32 @@
+.bg {
+    
+    position: absolute;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    z-index: -1;
+
+}
+
+
 body {
+    background-image: url("../images/bg-invert.png");
+    min-height: 100vh;
+    min-width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow-y: visible;
     overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
+    border-radius: 0.5rem;
 }
 
 .div-yt-1 {
@@ -18,6 +40,7 @@ a {
     border-radius: 10px;
     box-shadow: grey 10px 10px 10px 1px;
     margin-top: 3rem;
+    background-color: white;
 }
 
 .yt-1-2 {
@@ -25,6 +48,7 @@ a {
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 4rem;
+    
 }
 
 .div-yt-2 {
@@ -35,6 +59,7 @@ a {
     border: black 1px solid;
     border-radius: 10px;
     box-shadow: grey 10px 10px 10px 1px;
+    background-color: white;
 }
 
 .div-yt-3 {
@@ -45,6 +70,7 @@ a {
     border: black 1px solid;
     border-radius: 10px;
     box-shadow: grey 10px 10px 10px 1px;
+    background-color: white;
 }
 
 .classement {
