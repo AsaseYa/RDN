@@ -19,10 +19,10 @@ body {
 .bg {
     background: none;
 }
-a {
+/*a {
     text-decoration: none;
     border-radius: 0.5rem;
-}
+}*/
 
 .div-yt-1 {
     display: flex;

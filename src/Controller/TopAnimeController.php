@@ -16,7 +16,9 @@ use Google_Service_YouTube;
 
 class TopAnimeController extends AbstractController
 {
-    public function index() {
+    public function index()
+    {
+        session_start();
         $itemManager = new MusicManager();
         $musics = $itemManager->selectAllAnimeLimit2();
 
