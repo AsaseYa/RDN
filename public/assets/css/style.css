@@ -25,7 +25,4 @@ body {
     flex-direction: column;
     height: 100vh;
 }
-
-.invert {
-    filter: invert(100%);
-}
+.invert { filter: invert(100%); }
