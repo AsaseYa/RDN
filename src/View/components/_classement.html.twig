@@ -1,16 +1,30 @@
-{% for music in musics %}
-
-	<div class="classement">
-		{#<div style="display: none;">{{ music.artid }}</div>#}
-		
-        
-        
-        <img class="music-classement" alt="{{ article.aname }}" src="{{ article.picture }}"/>
-		
-        
-        
-        <h4 class="music-name">{{ music.name }}</h4>
-		<h4 class="music-url">{{ music.url }}€</h4>
-		<p class="music-points">{{ music.points }}</p>
-	</div>
+{% for video in videos %}
+	{% set i = ( i | default(0) ) + 1 %}
+	{% if i == 1 %}
+		<div class="div-yt-1">
+        	<iframe class="yt-1" width="700" height="400" src="{{ video['url'] }}"></iframe>
+        	<h4 class="music-name">{{ video.name }}</h4>
+		</div>
+	{% elseif i == 2 %}
+		<div class="div-yt-2">
+			<div class="yt-placement">
+			<iframe class="yt-2" width="700" height="400" src="{{ video['url'] }}"></iframe>
+        	<h4 class="music-name">{{ video.name }}</h4>
+		</div>
+	{% elseif i == 3 %}
+			<div class="yt-placement">
+			<iframe class="yt-3" width="700" height="400" src="{{ video['url'] }}"></iframe>
+        	<h4 class="music-name">{{ video.name }}</h4>
+			</div>
+		</div>	
+	{% else %}
+		<div class="classement">
+			<div class="place">{{ i }}</div>
+        	<h4 class="music-name">{{ video.name }}</h4>
+			<h4 class="music-url">lien vers la video: <a href="{{ video.url }}">ici</a></h4>
+			<p class="music-points">{{ video.points }}</p>
+		</div>
+	{% endif %}
+	
+	
 {% endfor %}
