@@ -1,3 +1,7 @@
+* {
+    overflow: hidden;
+}
+
 .videos {
     display: flex;
     flex-direction: row;
@@ -13,7 +17,6 @@
 .videos div button {
     margin-top: 5rem;
 }
-
 
 .video1 {
     display: flex;

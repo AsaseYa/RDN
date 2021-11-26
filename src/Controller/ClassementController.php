@@ -3,9 +3,17 @@
 namespace App\Controller;
 
 use App\Model\ClassementManager;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Error\SyntaxError;
 
 class ClassementController extends AbstractController
 {
+    /**
+     * @throws SyntaxError
+     * @throws RuntimeError
+     * @throws LoaderError
+     */
     public function index(): string
     {
         $classementManager = new ClassementManager();

@@ -1,10 +1,12 @@
 {% extends 'layout.html.twig' %}
  {% block stylesheet %}
-  {# <link rel="stylesheet" href="/assets/css/style.css" /> #}
-  <link rel="stylesheet" href="/assets/css/navbar.css" />
-  <link rel="stylesheet" href="/assets/css/classement.css" />
-{% endblock %}
+     <link rel="stylesheet" href="/assets/css/style.css"/>
+     <link rel="stylesheet" href="/assets/css/navbar.css"/>
+     <link rel="stylesheet" href="/assets/css/classement.css"/>
+ {% endblock %}
 {% block content %}
-  {% include 'components/_navbar.html.twig' %}
-  {% include 'components/_classement.html.twig' %}
+    <div class="main">
+        {% include 'components/_navbar.html.twig' %}
+        {% include 'components/_classement.html.twig' %}
+    </div>
 {% endblock %}
