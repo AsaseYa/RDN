@@ -1,21 +1,23 @@
-.main {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+body {
+    background-image: url(/assets/images/bg.jpg);
 }
 
 .bg {
-    background-image: url("../images/bg-invert.png");
+    background: linear-gradient(to left top, #910000, #4e0101 5%, rgb(10, 10, 10) 20%, black 50%,rgb(12, 12, 12) 80%,#000566 95%, #000aac);
     min-height: 100vh;
     min-width: 100vw;
-    position: absolute;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 50%;
+}
+.main {
+    top: 0;
+    position: absolute;
     display: flex;
+    flex-direction: column;
+    height: 100vh;
     align-items: flex-end;
-    z-index: -1;
-
 }
 .invert { filter: invert(100%); }
