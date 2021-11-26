@@ -15,11 +15,13 @@
         <div class="input">
             <form class="form1" action="" method="POST">
                 <input type="text" style="display: none;" name="id" value="{{ musics[0]['id'] }}">
-                <input type="submit" class='submit' id='submit' value="vote">
+                <input type="text" style="display: none;" name="title" value="{{ musics[0]['name'] }}">
+                <input type="text" style="display: none;" name="url" value="{{ musics[0]['url'] }}">
+                <input type="submit" class='submit1' id='submit' value="vote">
             </form>
         </div>
     </div>
-    <img class="versus-video invert" src="/assets/images/logo2.png">
+    <img class="versus-video" src="/assets/images/logo2.png">
     <div class="video2">
         <div class="title2">
 
@@ -30,7 +32,9 @@
         <div class="input">
             <form class="form2" action="" method="POST">
                 <input type="text" style="display: none;" name="id" value="{{ musics[1]['id'] }}">
-                <input type="submit" class='submit' id='submit' value="vote">
+                <input type="text" style="display: none;" name="title" value="{{ musics[1]['name'] }}">
+                <input type="text" style="display: none;" name="url" value="{{ musics[1]['url'] }}">
+                <input type="submit" class='submit2' id='submit' value="vote">
 
             </form>
         </div>
