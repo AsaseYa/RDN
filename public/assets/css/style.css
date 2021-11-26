@@ -20,4 +20,7 @@ body {
     height: 100vh;
     align-items: flex-end;
 }
-.invert { filter: invert(100%); }
+
+.invert {
+    filter: invert(100%);
+}
