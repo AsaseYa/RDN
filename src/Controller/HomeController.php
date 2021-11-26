@@ -47,7 +47,7 @@ class HomeController extends AbstractController
             if (isset($_GET['select'])) {
                 $select = new MusicManager();
                 $new = $select->selectAllLimit2Select($_GET['select']);
-                return $this->twig->render('Home/index.html.twig', ["musics" => $new]);
+                return $this->twig->render('Home/index.html.twig', ["musics" => $new, "isGet" => $_GET['select']]);
             }
         }
 

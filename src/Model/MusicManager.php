@@ -16,6 +16,39 @@ class MusicManager extends AbstractManager
         return $this->pdo->query($query)->fetchAll();
     }
 
+    public function selectAllAnimeLimit2()
+    {
+        $query = "SELECT *
+            FROM music
+            where genre_id = 1
+            ORDER BY rand()
+            LIMIT 2";
+
+        return $this->pdo->query($query)->fetchAll();
+    }
+
+    public function selectAll90Limit2()
+    {
+        $query = "SELECT *
+            FROM music
+            where genre_id = 2
+            ORDER BY rand()
+            LIMIT 2";;
+
+        return $this->pdo->query($query)->fetchAll();
+    }
+
+    public function selectAll50Limit2()
+    {
+        $query = "SELECT *
+            FROM music
+            where genre_id = 4
+            ORDER BY rand()
+            LIMIT 2";;
+
+        return $this->pdo->query($query)->fetchAll();
+    }
+
     public function insertVote($id)
     {
         $music = new MusicManager();
