@@ -19,6 +19,7 @@ class ClassementController extends AbstractController
         session_start();
         if (isset($_SESSION['validateMusique'])) {
             $validateMusique = $_SESSION['validateMusique'];
+
             $classementManager = new ClassementManager();
             $videos = $classementManager->selectAll('points', 'desc');
             return $this->twig->render('Classement/index.html.twig', [
