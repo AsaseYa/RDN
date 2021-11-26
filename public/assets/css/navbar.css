@@ -13,7 +13,7 @@
 
 .topnav {
     background: white;
-     
+
 }
 
 div.card div a {
@@ -26,15 +26,18 @@ div.card div a {
     width: 100vw;
 }
 
-#myLinks :hover {                                
-    background-color: rgb(123, 233, 253);
-    box-shadow: none;
-    border-radius: 2rem;
-}
-#myLinks a {                                
+#myLinks a {
     font-size: 2rem;
     margin-right: 4%;
 }
+
+#myLinks a:hover {
+    background: black;
+    color: white;
+    box-shadow: none;
+    border-radius: 10px;
+}
+
 #myLinks {
     width: 100%;
     display: flex;
