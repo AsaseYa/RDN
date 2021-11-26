@@ -1,40 +1,32 @@
 .topnav a {
-    color: rgb(0, 0, 0);
-    padding: 10px;
+    color: white;
+    padding: 1rem;
     text-decoration: none;
     font-size: 40px;
     display: block;
 }
 
 .topnav a img {
-    margin-top: 0.5rem;
-    width: 50px;
-}
-
-.topnav {
-    background: white;
-
-}
-
-div.card div a {
-    font-size: large;
+    width: 3rem;
+    overflow: hidden;
 }
 
 .topnav {
     display: flex;
     align-items: center;
     width: 100vw;
+    height: fit-content;
+    padding: 0.5rem;
 }
 
 #myLinks a {
-    font-size: 22px;                                                
     font-size: 2rem;
     margin-right: 4%;
 }
 
 #myLinks a:hover {
-    background: black;
-    color: white;
+    background: white;
+    color: black;
     box-shadow: none;
     border-radius: 10px;
 }
@@ -45,3 +37,8 @@ div.card div a {
     flex-direction: row;
     justify-content: flex-end;
 }
+
+.logoDesktop {
+    padding: 0;
+}
+

@@ -17,6 +17,7 @@ use Google_Service_YouTube;
 class Top90Controller extends AbstractController
 {
     public function index() {
+        session_start();
         $itemManager = new MusicManager();
         $musics = $itemManager->selectAll90Limit2();
 
