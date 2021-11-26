@@ -28,7 +28,7 @@
     width: calc(50% - 1.5rem);
     margin-left: 3rem;
     transition: 1s;
-    animation: video-enter 1s;
+    animation: video-enter 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-delay: 1s;
@@ -44,7 +44,7 @@
     right: -50vw;
     width: calc(50% - 1.5rem);
     margin-right: 3rem;
-    animation: video-exit 1s;
+    animation: video-exit 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-delay: 1s;
@@ -98,7 +98,7 @@
     animation: versus-middle 1.5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    animation-delay: 2.5s;
+    animation-delay: 2s;
 }
 
 .invert {
